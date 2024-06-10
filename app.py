@@ -1,7 +1,7 @@
 import openai
 
 # set my openAI key
-openai.api_key = "sk-proj-hhcZnC2C74tGqBNQZ7grT3BlbkFJXvi1vrQsVgpJgBtly7tl"
+openai.api_key = "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"
 
 
 def fetch_quote(prompt):
@@ -11,7 +11,7 @@ def fetch_quote(prompt):
     try:
         #Get the reponse from the OpenAI API
         response = openai.Completion.create(
-            engine = "text-davinci-004",
+            engine = "text-davinci-003",
             prompt=api_prompt,
             max_token=50,
             temperature=0.7,
