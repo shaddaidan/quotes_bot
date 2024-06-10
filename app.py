@@ -4,7 +4,7 @@ import openai
 openai.api_key = "sk-proj-hhcZnC2C74tGqBNQZ7grT3BlbkFJXvi1vrQsVgpJgBtly7tl"
 
 
-def create_quote(prompt):
+def fetch_quote(prompt):
     # create a prompt for the openAI API
     api_prompt = f"Give me a famous quote and the author related to {prompt}."
 
@@ -26,5 +26,7 @@ def create_quote(prompt):
     
 # Example usage
 if __name__ == "__main__":
-    user
+    user_prompt = input("enter a tpic for a quote (e.g., love, hard work, science): ")
+    quote = fetch_quote(user_prompt)
+print(f"Quote: {quote}")
 
